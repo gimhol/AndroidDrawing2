@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/line_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/line"
+        android:src="@drawable/line" />
+
+    <ImageButton
+        android:id="@+id/rect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/rect"
+        android:src="@drawable/rect" />
+
+    <ImageButton
+        android:id="@+id/triangle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/triangle"
+        android:src="@drawable/triangle" />
+
+    <ImageButton
+        android:id="@+id/select_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/select"
+        android:src="@drawable/select" />
+
+    <ImageButton
+        android:id="@+id/erase_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/erase"
+        android:src="@drawable/eraser" />
+
+    <ImageButton
+        android:id="@+id/colorpicker_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/colorpicker"
+        android:src="@drawable/colorwheel" />
+
+    <ImageButton
+        android:id="@+id/snapshot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/snapshot"
+        android:src="@drawable/snapshot" />
+
+    <ImageButton
+        android:id="@+id/undo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/undo"
+        android:src="@drawable/vgundo" />
+
+    <ImageButton
+        android:id="@+id/redo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/redo"
+        android:src="@drawable/vgredo" />
+
+</LinearLayout>
