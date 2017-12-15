@@ -21,10 +21,11 @@
 2. clone 此项目与 TouchVG 项目 [https://github.com/gimhol/TouchVG](https://github.com/gimhol/TouchVG) ，放到同一目录下。
 ```
 某目录
- ├AndroidDrawings
- └TouchVG
+ ├─AndroidDrawings
+ └─TouchVG
 ```
-3. Android Studio打开此项目，配置SDK与NDK目录。
+3. Android Studio打开此项目，配置NDK目录。
+4. 然后根据提示错误安装对应的sdk tool。
 
 最后修改此文章的各工具版本：
 Android Studio 3.0
@@ -33,24 +34,24 @@ NDK r15b
 练习1：超简单的涂鸦App
 -------------------
 
-~~准备工作：安装 ADT Bundle 开发环境（我用的是v23，官方下载被墙，可从[这][ADT]下载）。
+~~准备工作：安装 ADT Bundle 开发环境（我用的是v23，官方下载被墙，可从[这][ADT]下载）。~~
 
-~~1. 新建 Android 程序项目。
+~~1. 新建 Android 程序项目。~~
 
    - ~~SDK 最小版本选 API 16 以上（避免自动创建的 appcompat_v7 项目出现资源缺失错误），完成后可改回低版本（使用 TouchVG 要求最低 API 12）。
-   - ~~在创建 Activity 页面选择默认的简单布局 Blank Activity。
+   - 在创建 Activity 页面选择默认的简单布局 Blank Activity。~~
 
 2. 在主页面布局中添加一个 FrameLayout，将用作绘图区的容器。
 
    - 指定 ID 为 `container`，下面就可通过 `findViewById(R.id.container)`找到此布局。
    - 使用 FrameLayout 而不是其他布局类型做绘图视图容器，是避免触摸绘图引起其他相邻视图联锁刷新。
 
-3. 添加 TouchVG 引用。
+3. ~~添加 TouchVG 引用。~~
 
-   - 下载[预编译的TouchVG包][prebuilt]，将 touchvg.jar 和 libtouchvg.so 复制到程序项目的 libs 下。
+   - ~~下载[预编译的TouchVG包][prebuilt]，将 touchvg.jar 和 libtouchvg.so 复制到程序项目的 libs 下。~~
    
-   - 如需调试进入 TouchVG 或快速查看 [IViewHelper][IViewHelper] 接口注释，则不能复制touchvg.jar，可将 [TouchVG项目][vgandroid] 下载到上级目录并导入TouchVG工程，在程序项目的 project.properties 中加入引用：
-   `android.library.reference.1=../../vgandroid/TouchVG`
+   - ~~如需调试进入 TouchVG 或快速查看 [IViewHelper][IViewHelper] 接口注释，则不能复制touchvg.jar，可将 [TouchVG项目][vgandroid] 下载到上级目录并导入TouchVG工程，在程序项目的 project.properties 中加入引用：
+   `android.library.reference.1=../../vgandroid/TouchVG`~~
 
 4. 在 MainActivity.java 中创建绘图视图。
 
