@@ -1,29 +1,43 @@
 # AndroidDrawing2
 
-基于 [TouchVG][vgandroid] 构建矢量绘图应用样例。
-目前源项目的Android Studio项目版本
+基于 [TouchVG][vgandroid] 构建矢量绘图应用样例的Android Studio项目版本
 
 源项目地址：[https://github.com/rhcad/AndroidDrawing](https://github.com/rhcad/AndroidDrawing)
 
 ## 目录
+- [1.准备工作](#准备工作)
+- [2.超简单的涂鸦App](#练习1超简单的涂鸦app)
+- [3.添加绘图按钮](#练习2添加绘图按钮)
+- [4.增加自动保存和恢复功能](#练习3增加自动保存和恢复功能)
+- [5.增加线宽动态修改和更新功能](#练习4增加线宽动态修改和更新功能)
+- [6.增加颜色选择框](#练习5增加颜色选择框)
+- [7.增加Undo/Redo功能](#练习6增加undoredo功能)
+- [8.截屏](#练习7绘图区截屏)
 
-- [1.超简单的涂鸦App](#练习1超简单的涂鸦app)
-- [2.添加绘图按钮](#练习2添加绘图按钮)
-- [3.增加自动保存和恢复功能](#练习3增加自动保存和恢复功能)
-- [4.增加线宽动态修改和更新功能](#练习4增加线宽动态修改和更新功能)
-- [5.增加颜色选择框](#练习5增加颜色选择框)
-- [6.增加Undo/Redo功能](#练习6增加undoredo功能)
-- [7.截屏](#练习7绘图区截屏)
+准备工作
+-------------------
+1. 安装Android Studio
+
+2. clone 此项目与 TouchVG 项目 [https://github.com/gimhol/TouchVG](https://github.com/gimhol/TouchVG) ，放到同一目录下。
+某目录
+├AndroidDrawings
+└TouchVG
+
+3. Android Studio打开此项目，配置SDK与NDK目录。
+
+最后修改此文章的各工具版本：
+Android Studio 3.0
+NDK r15b
 
 练习1：超简单的涂鸦App
 -------------------
 
-准备工作：安装 ADT Bundle 开发环境（我用的是v23，官方下载被墙，可从[这][ADT]下载）。
+~~准备工作：安装 ADT Bundle 开发环境（我用的是v23，官方下载被墙，可从[这][ADT]下载）。
 
-1. 新建 Android 程序项目。
+~~1. 新建 Android 程序项目。
 
-   - SDK 最小版本选 API 16 以上（避免自动创建的 appcompat_v7 项目出现资源缺失错误），完成后可改回低版本（使用 TouchVG 要求最低 API 12）。
-   - 在创建 Activity 页面选择默认的简单布局 Blank Activity。
+   - ~~SDK 最小版本选 API 16 以上（避免自动创建的 appcompat_v7 项目出现资源缺失错误），完成后可改回低版本（使用 TouchVG 要求最低 API 12）。
+   - ~~在创建 Activity 页面选择默认的简单布局 Blank Activity。
 
 2. 在主页面布局中添加一个 FrameLayout，将用作绘图区的容器。
 
