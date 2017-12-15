@@ -19,10 +19,11 @@
 1. 安装Android Studio
 
 2. clone 此项目与 TouchVG 项目 [https://github.com/gimhol/TouchVG](https://github.com/gimhol/TouchVG) ，放到同一目录下。
+```
 某目录
-├AndroidDrawings
-└TouchVG
-
+ ├AndroidDrawings
+ └TouchVG
+```
 3. Android Studio打开此项目，配置SDK与NDK目录。
 
 最后修改此文章的各工具版本：
